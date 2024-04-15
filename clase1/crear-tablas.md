@@ -7,20 +7,20 @@
 
     CREATE TABLE nombreTabla    
     (   
-        nombreColumna1 tipoDato...,  
-        nombreColumna2 tipoDato...,  
-        nombreColumna3 tipoDato...,  
-        nombreColumna4 tipoDato...
+        nombreColumna1 tipoDato características,  
+        nombreColumna2 tipoDato características,  
+        nombreColumna3 tipoDato características,  
+        nombreColumna4 tipoDato características
     );
 
 > Ejemplo práctico: 
 
     CREATE TABLE personas    
     (   
-        id tinyint unsigned ...,  
-        apellido varchar(30)...,  
-        nombre varchar(30)...,  
-        dni int unsigned...,    
-        alta date...    
+        id tinyint unsigned auto_increment primary key not null,  
+        apellido varchar(30) not null,  
+        nombre varchar(30) not null,  
+        dni int unsigned unique not null,    
+        alta date not null    
     );  
 
